@@ -1,0 +1,71 @@
+Step Wise Problem Statement: Stock Market Prediction Using Economic Indicators
+________________________________________
+Step 1: Data Understanding & Cleaning
+Q1. What missing values and outliers exist in the dataset, and how do they affect the reliability of stock price prediction?
+•	Identify missing/null values across columns like Close, Volume, Oil, Gold, GDP, etc.
+•	Handle missing data (mean/mode imputation or forward fill for time series).
+•	Detect outliers in numeric columns (e.g., Volume, Close, Oil) using Z score/IQR.
+•	Summarize missing values and outliers with tables/plots.
+________________________________________
+Step 2: Feature Engineering & Correlation Analysis
+Q2. Which technical indicators and macroeconomic variables are most correlated with Close (stock price)?
+•	Compute correlation between Close and indicators like EMA_10, EMA_50, ROC_10, mom1, etc.
+•	Include macroeconomic variables (DTB3, DGS10, DAAA, DBAA, Oil, Gold, Dollar index).
+•	Visualize with a heatmap.
+•	Summarize top 5 positively and negatively correlated features.
+________________________________________
+Step 3: Time Series Trend Analysis
+Q3. How do stock prices (Close) react to changes in interest rates and commodity prices over time?
+•	Perform time series decomposition on Close.
+•	Compare trends with DTB3, DGS10 (interest rates), Oil, Gold, Brent.
+•	Identify seasonal patterns and residuals.
+•	Summarize how interest rate changes align with market movements.
+________________________________________
+Step 4: Volatility Analysis
+Q4. What are the most volatile periods in the DJI dataset, and how can we detect them?
+•	Compute rolling standard deviation of Close.
+•	Apply Bollinger Bands using EMA_20 and rolling std.
+•	Highlight high volatility periods (e.g., financial crises, oil shocks).
+•	Summarize volatility impact on trading strategies.
+________________________________________
+Step 5: Sector & Stock Performance Analysis
+Q5. How do individual stocks (AAPL, AMZN, MSFT, JPM, XOM, etc.) and sectors contribute to overall DJI fluctuations?
+•	Compare average returns and volatility of major stocks.
+•	Group by sector (Tech: AAPL, MSFT, AMZN; Finance: JPM, WFC; Energy: XOM, Brent, Oil).
+•	Visualize sector contributions with bar charts.
+•	Summarize sector dependencies on DJI performance.
+________________________________________
+Step 6: Global Indices Comparison
+Q6. How do international indices (FTSE, GDAXI, HSI, IXIC, SSEC, RUT, NYSE) move in relation to DJI?
+•	Compute correlation between DJI (Close) and global indices.
+•	Identify which markets show strongest co movement.
+•	Summarize global interdependencies.
+________________________________________
+Step 7: Macroeconomic Impact on Stock Prices
+Q7. How do economic indicators (Inflation proxies: DAAA, DBAA; exchange rates: GBP, JPY, CAD, CNY, EUR, AUD, CHF; commodities: Oil, Gold, Copper, Silver) influence DJI movements?
+•	Perform correlation analysis between Close and these variables.
+•	Build regression models to quantify relationships.
+•	Interpret coefficients (e.g., does rising oil price negatively impact DJI?).
+•	Suggest investment strategies based on findings.
+________________________________________
+Step 8: Futures & Commodity Impact
+Q8. How do futures contracts (NASDAQ-F, S&P-F, FTSE-F, gold-F, oil-F, wheat-F) predict or align with DJI movements?
+•	Compare DJI with futures data.
+•	Identify leading indicators among futures contracts.
+•	Summarize predictive power of futures markets.
+________________________________________
+Step 9: Currency & Dollar Index Analysis
+Q9. How do exchange rates (GBP, JPY, CAD, CNY, EUR, AUD, CHF, NZD) and Dollar index affect DJI performance?
+•	Correlation/regression analysis between DJI and currency values.
+•	Summarize how dollar strength/weakness impacts stock prices.
+________________________________________
+Step 10: Final Deliverables
+Students should provide:
+•	Cleaned dataset summary.
+•	Correlation heatmaps (technical indicators, macroeconomic variables, global indices).
+•	Time series decomposition plots.
+•	Volatility charts with Bollinger Bands.
+•	Sector & stock performance comparisons.
+•	Regression analysis results for macroeconomic impacts.
+•	Short report answering Q1–Q9 with insights and visualizations.
+________________________________________
